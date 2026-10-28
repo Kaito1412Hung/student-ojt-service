@@ -3,6 +3,7 @@
 > **Dự án:** Student OJT Management Service
 > **Lập trình viên:** [Họ và Tên Học Viên]
 > **Lớp:** 6H Masterclass — AI Agent & Code Audit (R2S Academy)
+> **Công cụ:** IntelliJ IDEA + Claude Code (AI Agent)
 
 ----
 
@@ -15,6 +16,27 @@ src/main/resources/application*.properties
 *.pem
 *.key
 secrets/
+```
+
+Vì dự án dùng **Claude Code** làm AI Agent, lá chắn tương đương được cấu hình trong `.claude/settings.json`
+(cấm Agent đọc/sửa file cấu hình và secrets):
+
+```json
+{
+  "permissions": {
+    "deny": [
+      "Read(./src/main/resources/application*.yml)",
+      "Read(./src/main/resources/application*.properties)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./secrets/**)",
+      "Edit(./.env)",
+      "Edit(./secrets/**)"
+    ]
+  }
+}
 ```
 
 ----
