@@ -1,7 +1,7 @@
 # DEV PROMPT LIBRARY — BỘ SỔ TAY PROMPT 5 THÀNH TỐ CHUẨN DOANH NGHIỆP
 
 > **Dự án:** Student OJT Management Service
-> **Lập trình viên:** [Họ và Tên Học Viên]
+> **Lập trình viên:** Trần Quang Hưng
 > **Lớp:** 6H Masterclass — AI Agent & Code Audit (R2S Academy)
 > **Công cụ:** IntelliJ IDEA + Claude Code (AI Agent)
 
